@@ -1,0 +1,328 @@
+html {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height: 1.5rem;
+	}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 10px;
+	background-color: var(--background);
+	}
+ 
+h1 {
+	font-size: 1.5rem;
+	font-weight: bold
+	}
+	
+h2 {
+	font-size: 1rem;
+	font-weight: normal;
+	text-transform: uppercase
+	}
+
+p {
+	font-size: 1rem;
+	margin: 0
+	}
+	
+.u {
+	text-decoration: underline;
+	}
+
+select,
+input {
+	font-size: 1rem
+	}
+
+form {
+	margin: 0;
+	padding: 0
+	}
+
+/* -------------------------------------------------- wspólne elementy */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;}
+
+.fluid {
+	margin: 0;
+	width: 100%
+	}
+
+/* -------------------------------------------------- div ALL */
+
+.all {												
+	width: 100%;
+	padding: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
+
+.calc {												
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 2rem;
+	border-top: .3rem solid var(--border-top);
+	border-left: .3rem solid var(--border-left);
+	border-right: .3rem solid var(--border-right);
+	border-bottom: .3rem solid var(--border-bottom);
+	border-radius: 1rem;
+	box-shadow: 0 .6rem .7rem -.4rem #000, .3rem .3rem 1rem 0 rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 .6rem .7rem -.4rem #000, .3rem .3rem 1rem 0 rgba(0,0,0,0.25); 
+	-moz-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.25); 
+	background-color: var(--frame);
+	color: var(--text-light);
+	font-size: 1rem
+	}
+
+.frame {												
+	position: relative;
+	background-color: var(--bkg-calc)
+	}
+	
+/*.help-me {
+	position: asolute;
+	background-color: var(--bkg-help);
+	opacity: .9;
+	z-index: 0
+	}
+*/
+/* -------------------------------------------------- div TOP */
+
+.top {												
+	justify-content: space-between;											
+	background-color: var(--bkg-top-bottom);
+	border-bottom: .1rem solid var(--frame);
+	padding: 1rem 2rem
+	}
+
+.lang-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+	list-style: none
+	}
+	
+ul.lang-list li {
+	padding-left: 10px
+	}
+	
+ul.lang-list li a {	
+	text-decoration: none
+	}
+
+/* -------------------------------------------------- div MIDDLE */
+
+.middle {												
+	clear: both;
+	align-items: stretch
+	}
+
+/* -------------------------------------------------- div DATA-FORM */
+
+.data-form {
+	flex-direction: row;
+	padding: 2rem 0
+	}
+
+/* -------------------------------------------------- HELP */
+
+.help {
+	flex-direction: column;
+	background: var(--bkg-help);
+	border-top: .1rem solid var(--frame);
+	padding: .4rem .5rem;
+	font-size: .8rem
+	}
+
+#help-icon { 
+	cursor: hand; 
+	}
+
+#help-content {
+	display: none;
+	flex-direction: column;
+	margin: .5rem 0;
+	}
+
+#help-content p {
+	margin-top: .5rem;
+	}
+
+#help-content h3 {
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase
+	}
+
+#help-content h4 {
+	font-size: 1rem;
+	font-weight: normal;
+	text-transform: uppercase
+	}
+
+/* ------------------------------ div DATA-IN, DATA-CALC, DATA-OUT */
+
+.data-in,
+.data-out {
+	flex-direction: column;
+	border-top: .1rem solid var(--frame)
+	}
+
+.title {
+	background: var(--bkg-title);
+	border-bottom: .1rem solid var(--frame);
+	padding: 0 1rem
+	}
+
+.data-pair {
+	flex-grow: 1;
+	flex-basis: 0;
+	flex-direction: row;
+	border-bottom: .1rem solid var(--frame)
+	}
+
+.data-explain,
+.data-button,
+.data-result {
+	flex-grow: 1;
+	flex-basis: 0
+	}
+
+.data-explain,
+.data-select,
+.data-input,
+.data-result {
+	padding: .4rem .5rem
+	}
+
+.data-input {
+	padding-left: .2rem .5rem
+	}
+
+.data-explain {
+	background: var(--bkg-explain);
+	border-right: .1rem solid var(--frame)
+	}
+
+.data-select,
+.data-input {
+	background: var(--bkg-data);
+	color: var(--text-dark)
+	}
+
+.data-result {
+	background: var(--bkg-result);
+	color: var(--text-dark);
+	font-weight: bold
+	}
+
+.data-result > p {
+	font-size: 1.4rem
+	}
+	
+.result {
+	align-self: center
+	}
+	
+/* ------------------------------ div DATA-CALC */
+
+.data-calc {
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	cursor: pointer
+	}
+	
+.data-calc-button {
+	width: 100%;
+	height: 100%;
+	border-color: var(--bt-calc);
+	cursor: pointer
+	}
+
+.calculate {
+	opacity: 0;
+	cursor: pointer
+	}
+	
+/* -------------------------------------------------- div BOTTOM */
+
+.bottom {												
+	background-color: var(--bkg-top-bottom);
+	border-top: .1rem solid var(--frame);
+	padding: 1rem 2rem;
+	align-items: center
+	}
+
+.copyright {
+	display: flex;
+	margin-top: .2rem;
+	margin-bottom: 0;										
+	color: var(--text-medium)
+	}
+
+
+
+/*
+*,
+::after,
+::before {
+box-sizing: border-box}
+
+/*.tooltip-help {
+	position: absolute;
+	top: 0;
+	right: 0
+	}
+
+.tooltip-help .icon {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	padding: 0 .5rem;
+	color: #555;
+	font-size: .8rem;
+	background: #eee;
+	border-radius: 50%;
+	cursor: pointer;
+	visibility: visible;
+	opacity: 1
+	}
+
+.tooltip-help .content {
+	position: absolute;
+	display: block;
+	margin: auto;
+	top: 3rem;
+	right: 1rem;
+	white-space: pre-line;
+	z-index: 100;
+	padding: 0 .5rem;
+	color: #555;
+	font-size: .8rem;
+	background: #eee;
+	border: 1px #000;
+	visibility: hidden;
+	opacity: 0
+	}
+
+.tooltip-help:hover .icon {
+	visibility: hidden;
+	opacity: 0}
+	
+.tooltip-help:hover .content {
+	visibility: visible;
+	opacity: 1
+	}
+*/	

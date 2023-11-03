@@ -1,0 +1,60 @@
+/* ---------------------------- BREAKPOINTS  */
+/*  x-small    xs   ->    ?   -  575px  */
+/*  small      sm   ->  640px -  767px  @media screen and (min-width: 640px)   @media screen and (min-width: 35.5em)  */
+/*  medium     md   ->  768px - 1023px  @media screen and (min-width: 768px)   @media screen and (min-width: 48em)  */
+/*  large      lg   -> 1024px - 1279px  @media screen and (min-width: 1024px)  @media screen and (min-width: 64em)  */
+/*  x-large    xl   -> 1280px - 1919px  @media screen and (min-width: 1280px)  @media screen and (min-width: 80em)  */
+/*  2x-large   2xl  -> 1920px - 2559px  @media screen and (min-width: 1920px)  @media screen and (min-width: 120em)  */
+/*  3x-large   3xl  -> 2560px - 3839px  @media screen and (min-width: 2560px)  @media screen and (min-width: 160em)  */
+/*  4x-large   x4k  -> 3840px -    ?    @media screen and (min-width: 2560px)  @media screen and (min-width: 240em)  */
+
+ @import url('./vars.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {    
+	font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+	color: var(--TEXT-DARK);
+    background-color: var(--BKG-DATA);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.clear-style {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.container {
+    display: block;
+    background-color: var(--BKG-CALC);
+}
+@media screen and (max-width: 767px) {
+    .container {
+        width: 90vw;
+        height: 90vh;
+        margin: 5vh 5vw;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 90vw;
+        height: 90vh;
+        margin: 10vh auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 70vw;
+        height: 70vh;
+        margin: 10vh auto;
+    }
+}

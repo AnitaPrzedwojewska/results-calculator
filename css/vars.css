@@ -1,0 +1,24 @@
+:root {
+    --BACKGROUND: 		#fdfdfd; 	/* white-shadow */
+	--TEXT-LIGHT: 		#ffffff;	/* white */
+	--TEXT-MEDIUM: 		#d5d6d7;	/* gray-light */
+	--TEXT-DARK: 		#000000;	/* black */
+	
+	--BORDER-TOP: 		#757575;	/* gray */
+	--BORDER-LEFT: 		#656565;	/* gray */
+	--BORDER-RIGHT: 	#454545;	/* gray */
+	--BORDER-BOTTOM: 	#353535;	/* gray */
+	
+	--FRAME: 			#000000; 	/* black */
+	--BKG-CALC: 		#28549b; 	/* blue-dark */
+	--BKG-TOP-BOTTOM: 	#1d3050; 	/* blue-deepdark */
+	--BKG-RESULT: 		#ffffff;	/* white */
+	
+	--BKG-TITLE: 		#5975A6;	/* blue-light */
+	--BKG-EXPLAIN: 		#28446b;	/* blue */
+	--BKG-DATA: 		#d5d6d7;	/* gray-light */
+	--BTN-CALC: 			#C70039;	/* red */
+	--BTN-HELP:			#C70039;	/* red */
+	
+	--BKG-HELP: 		#28446b;	/* blue */
+}
