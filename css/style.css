@@ -35,7 +35,15 @@ img {
 }
 .container {
     display: block;
-    background-color: var(--BKG-CALC);
+    border-top: .3rem solid var(--border-top);
+	border-left: .3rem solid var(--border-left);
+	border-right: .3rem solid var(--border-right);
+	border-bottom: .3rem solid var(--border-bottom);
+	border-radius: 1rem;
+	box-shadow: 0 .6rem .7rem -.4rem #000, .3rem .3rem 1rem 0 rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 .6rem .7rem -.4rem #000, .3rem .3rem 1rem 0 rgba(0,0,0,0.25); 
+	-moz-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.25); 
+	background-color: var(--FRAME);
 }
 @media screen and (max-width: 767px) {
     .container {
